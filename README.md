@@ -50,7 +50,7 @@ The Confusion matrix is one of the most intuitive and easiest metrics used for f
 - False Negatives (FN): False negatives are the cases when the actual class of the data point was 1(True) and the predicted is 0(False). False is because the model has predicted incorrectly and negative because the class predicted was a negative one. (0)
 
 <p style='text-align: center;'>
-    <img src="../images/matrix.png" alt="Accuracy Formula">
+    <img src="images/matrix.png" alt="Accuracy Formula">
 </p>
 
 
@@ -59,7 +59,7 @@ The Confusion matrix is one of the most intuitive and easiest metrics used for f
 Accuracy in classification problems is the number of correct predictions made by the model over all kinds predictions made.
 
 <p style='text-align: center;'>
-    <img src="../images/Accuracy.png" alt="Accuracy Formula" width="35%">
+    <img src="images/Accuracy.png" alt="Accuracy Formula" width="35%">
 </p>
 
 </p>
@@ -71,7 +71,7 @@ Let’s use the same confusion matrix as the one we used before for our cancer d
 Precision is a measure that tells us what proportion of patients that we diagnosed as having malignant cancer, actually had  malignant cancer. The predicted positives (People predicted as malignant cancerous are TP and FP) and the people actually having a malignant cancer are TP.
 
 <p style='text-align: center;'>
-    <img src="../images/precision.png" alt="Accuracy Formula" width="30%">
+    <img src="images/precision.png" alt="Accuracy Formula" width="30%">
 </p>
 </p>
 
@@ -81,7 +81,7 @@ Precision is a measure that tells us what proportion of patients that we diagnos
 Recall is a measure that tells us what proportion of patients that actually had malignant cancer was diagnosed by the algorithm as having malignant cancer. The actual positives (People having malignant cancer are TP and FN) and the people diagnosed by the model having a malignant cancer are TP. 
 
 <p style='text-align: center;'>
-    <img src="../images/recalll.png" alt="Accuracy Formula" width="30%">
+    <img src="images/recalll.png" alt="Accuracy Formula" width="30%">
 </p>
 </p>
 
@@ -91,7 +91,7 @@ Recall is a measure that tells us what proportion of patients that actually had 
 The F1 score combines recall with precision so that they bring in a single number.
 
 <p style='text-align: center;'>
-    <img src="../images/f1.png" alt="Accuracy Formula" width="30%">
+    <img src="images/f1.png" alt="Accuracy Formula" width="30%">
 </p>
 
 ## 2. Analysis
@@ -170,13 +170,13 @@ resulting in 30 features. For instance, field 3 is Mean Radius, field
 - fractal_dimension_worst   
 
 <p style='text-align: center;'>
-    <img src="../images/img.png" alt="Accuracy Formula">
+    <img src="images/img.png" alt="Accuracy Formula">
 </p>
     
    It was checked for missing data, as can be seen in the heat map, there is none. But there is a column called "Unnamed: 32" that appeared, it was deleted, as well as the column "id" as it is not a relevant feature for model learning.
     
 <p style='text-align: center;'>
-    <img src="../images/missing.png" alt="Accuracy Formula" width="60%">
+    <img src="images/missing.png" alt="Accuracy Formula" width="60%">
 </p>
     
    </p>
@@ -188,19 +188,19 @@ With Pandas, a Python library, we can easily extract statistical information fro
 </p>
 
 <p style='text-align: center;'>
-    <img src="../images/sta11.png" alt="Accuracy Formula" width="100%">
+    <img src="images/sta11.png" alt="Accuracy Formula" width="100%">
 </p>
 
 <p style='text-align: center;'>
-    <img src="../images/sta22.png" alt="Accuracy Formula" width="100%">
+    <img src="images/sta22.png" alt="Accuracy Formula" width="100%">
 </p>
 
 <p style='text-align: center;'>
-    <img src="../images/sta33.png" alt="Accuracy Formula" width="100%">
+    <img src="images/sta33.png" alt="Accuracy Formula" width="100%">
 </p>
 
 <p style='text-align: center;'>
-    <img src="../images/sta44.png" alt="Accuracy Formula" width="100%">
+    <img src="images/sta44.png" alt="Accuracy Formula" width="100%">
 </p>
 
 ### 2.2. Exploratory Visualization
@@ -209,7 +209,7 @@ With Pandas, a Python library, we can easily extract statistical information fro
 First it was observed that the dataset is unbalanced, there are more samples of benign than malignant cancer, as can be seen in the image below
     
 <p style='text-align: center;'>
-    <img src="../images/proportion.png" alt="Accuracy Formula" width="50%">
+    <img src="images/proportion.png" alt="Accuracy Formula" width="50%">
 </p>
     
   Then the boxplot for each feature was plotted, separated by the classes of cancer, benign and malignant. It was observed that in most of the features there were expressive differences between the graphs of benign and malignant data. Before being plotted, the data had to be normalized, as the differences between the values ​​of the features are very high so that it would be difficult to visualize the data.
@@ -225,7 +225,7 @@ To facilitate the visualization, the data were grouped every 10, see the graphic
 Then the correlation map between the features was plotted, which gives a broader view of the variables. Due to the magnitude of the data it is a little difficult to see this map in an image.
 
 <p style='text-align: center;'>
-    <img src="../images/correlation.png" alt="Accuracy Formula" width="100%">
+    <img src="images/correlation.png" alt="Accuracy Formula" width="100%">
 </p>
 </p>
 
@@ -289,7 +289,7 @@ The range used for the resource returned by MinMaxScaler was 0 to 1.
 The MinMaxScaler follows the following formula for each feature:
 
 <p style='text-align: center;'>
-    <img src="../images/minmax.png" alt="Accuracy Formula" width="30%">
+    <img src="images/minmax.png" alt="Accuracy Formula" width="30%">
 </p>
 
 ### 3.2.  Implementation
@@ -306,7 +306,7 @@ At the end of the k iterations, the accuracy of the errors found is calculated u
 In this work, K-fold was used to verify the metrics of the models, k = 5 was used.
 
 <p style='text-align: center;'>
-    <img src="../images/kfold.png" alt="Accuracy Formula" width="50%">
+    <img src="images/kfold.png" alt="Accuracy Formula" width="50%">
 </p>
 
 ### 3.3.  Refinement
@@ -329,7 +329,7 @@ Metrics were obtained (average of k folds), for test and training data on all mo
 | F1 score | 98.43 | 98.62 |
 
 <p style='text-align: center;'>
-    <img src="../images/svm.png" alt="Accuracy Formula" width="30%">
+    <img src="images/svm.png" alt="Accuracy Formula" width="30%">
 </p>
 
 #### 4.1.1 Gradient Boosting Classifier
@@ -343,7 +343,7 @@ Metrics were obtained (average of k folds), for test and training data on all mo
 
 
 <p style='text-align: center;'>
-    <img src="../images/conf1.png" alt="Accuracy Formula" width="30%">
+    <img src="images/conf1.png" alt="Accuracy Formula" width="30%">
 </p>
 
 #### 4.1.1 Stochastic Gradient Descent
@@ -357,7 +357,7 @@ Metrics were obtained (average of k folds), for test and training data on all mo
 
 
 <p style='text-align: center;'>
-    <img src="../images/conf2.png" alt="Accuracy Formula" width="30%">
+    <img src="images/conf2.png" alt="Accuracy Formula" width="30%">
 </p>
 
 #### 4.1.1 Decision tree
@@ -371,7 +371,7 @@ Metrics were obtained (average of k folds), for test and training data on all mo
 
 
 <p style='text-align: center;'>
-    <img src="../images/conf3.png" alt="Accuracy Formula" width="30%">
+    <img src="images/conf3.png" alt="Accuracy Formula" width="30%">
 </p>
 
 #### 4.1.1 Naive Bayes
@@ -385,7 +385,7 @@ Metrics were obtained (average of k folds), for test and training data on all mo
 
 
 <p style='text-align: center;'>
-    <img src="../images/conf4.png" alt="Accuracy Formula" width="30%">
+    <img src="images/conf4.png" alt="Accuracy Formula" width="30%">
 </p>
 
 ### 4.2. Justification
